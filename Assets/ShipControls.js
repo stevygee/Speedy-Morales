@@ -10,19 +10,22 @@ function Start () {
 
 function Update ()
 {
+	// Move Player in realtime
+	var myDeltaTime = Time.timeScale == 0 ? 0 : Time.deltaTime / Time.timeScale;
+
 	// Speed
     if(Input.GetKey(KeyCode.W))
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.forward * moveSpeed * myDeltaTime);
     
     if(Input.GetKey(KeyCode.S))
-        transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);
+        transform.Translate(-Vector3.forward * moveSpeed * myDeltaTime);
     
     // Strafe
     if(Input.GetKey(KeyCode.A))
-        transform.Translate(Vector3.left * strafeSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * strafeSpeed * myDeltaTime);
     
     if(Input.GetKey(KeyCode.D))
-        transform.Translate(Vector3.right * strafeSpeed * Time.deltaTime);
+        transform.Translate(Vector3.right * strafeSpeed * myDeltaTime);
     
     // Turn
     /*if(Input.GetKey(KeyCode.Q))
