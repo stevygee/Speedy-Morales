@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c449b35526c89e44f9c7bfdda34b5f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 3
   strafeSpeed: 5
   turnSpeed: 100
 --- !u!114 &1334825953
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a64078668e09f439523acb59e771fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 10
+  turnSpeed: 5
 --- !u!114 &1334825954
 MonoBehaviour:
   m_ObjectHideFlags: 0
